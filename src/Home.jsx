@@ -134,8 +134,7 @@ function Home() {
 
           {/* COLUMNA IZQUIERDA: TEXTO Y BOTONES */}
           <div className="w-full lg:w-1/2 relative flex items-center justify-center p-8 lg:p-12 overflow-hidden">
-            {/* Fondo degradado sutil */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-900 pointer-events-none"></div>
+
 
             <div className="relative z-10 max-w-lg w-full flex flex-col justify-center items-center text-center">
               <span className="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6 backdrop-blur-sm animate-fade-in-down inline-block">
