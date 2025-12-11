@@ -121,14 +121,14 @@ function Register() {
             <img
               src="/img/Registro.png"
               className="w-full h-auto object-contain drop-shadow-2xl"
-              alt="Predigol 3D Logo"
+              alt="GolMaster 3D Logo"
             />
           </div>
 
           {/* Texto de Bienvenida / Slogan */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-              Únete a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Predigol</span>
+              Únete a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">GolMaster</span>
             </h1>
             <p className="text-slate-300 text-lg leading-relaxed max-w-lg mx-auto font-light">
               "Demuestra tu pasión, predice los resultados y compite con amigos en el mundial."

@@ -77,14 +77,14 @@ function Login() {
             <img
               src="/img/login.png"
               className="w-full h-auto object-contain drop-shadow-2xl"
-              alt="Predigol 3D Logo"
+              alt="Golmaster 3D Logo"
             />
           </div>
 
           {/* Texto de Bienvenida / Slogan */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-              Bienvenido a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Predigol</span>
+              Bienvenido a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">GolMaster</span>
             </h1>
             <p className="text-slate-300 text-lg leading-relaxed max-w-lg mx-auto font-light">
               "El fútbol no es solo un juego, es una pasión que une naciones y crea historias inolvidables."
