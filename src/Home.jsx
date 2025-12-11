@@ -132,24 +132,39 @@ function Home() {
 
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-slate-900/50"></div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-            <span className="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6 backdrop-blur-sm animate-fade-in-down">
-              🏆 La Copa del Mundo 2026
-            </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight drop-shadow-lg animate-fade-in-up">
-              Vive la Pasión <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Gana en Grande</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-medium drop-shadow-md animate-fade-in-up delay-100">
-              Participa en la quiniela más emocionante. Predice resultados, compite con amigos y gana premios exclusivos.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
-              <Link to="/register" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_20px_rgba(37,99,235,0.5)] hover:shadow-[0_0_30px_rgba(37,99,235,0.7)] transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                Jugar Ahora <ArrowRight size={20} />
-              </Link>
-              <a href="#como-funciona" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg transition-all backdrop-blur-sm flex items-center justify-center">
-                Cómo Funciona
-              </a>
+          {/* COLUMNA IZQUIERDA: TEXTO Y BOTONES */}
+          <div className="w-full lg:w-1/2 relative flex items-center justify-center p-8 lg:p-12 overflow-hidden">
+            {/* Fondo degradado sutil */}
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-900 pointer-events-none"></div>
+
+            <div className="relative z-10 max-w-lg w-full flex flex-col justify-center items-center text-center">
+              <span className="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6 backdrop-blur-sm animate-fade-in-down inline-block">
+                🏆 La Copa del Mundo 2026
+              </span>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight drop-shadow-lg animate-fade-in-up">
+                Vive la Pasión <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Gana en Grande</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-md mx-auto font-medium drop-shadow-md animate-fade-in-up delay-100 leading-relaxed">
+                Participa en la quiniela más emocionante. Predice resultados, compite con amigos y gana premios exclusivos.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 w-full justify-center animate-fade-in-up delay-200">
+                <Link
+                  to="/register"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_20px_rgba(37,99,235,0.5)] hover:shadow-[0_0_30px_rgba(37,99,235,0.7)] transform hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto"
+                >
+                  Jugar Ahora <ArrowRight size={20} />
+                </Link>
+                <a
+                  href="#como-funciona"
+                  className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg transition-all backdrop-blur-sm flex items-center justify-center w-full sm:w-auto"
+                >
+                  Cómo Funciona
+                </a>
+              </div>
             </div>
           </div>
         </div>
