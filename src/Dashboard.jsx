@@ -127,7 +127,7 @@ function Dashboard() {
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <img src="/img/logo.png" alt="Logo" className="h-10 w-auto object-contain" />
-            <span className="font-black text-xl tracking-tighter text-blue-900 hidden sm:block">PREDIGOL</span>
+            <span className="font-black text-xl tracking-tighter text-blue-900 hidden sm:block">GOLMASTER</span>
           </div>
 
           <div className="hidden md:flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
