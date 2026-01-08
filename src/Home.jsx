@@ -11,7 +11,9 @@ const heroImages = [
   '/img/hero3.jpg',
 ];
 
-const API_URL = 'https://api-quiniela-444s.onrender.com';
+import API_URL from './config';
+
+// const API_URL = 'https://api-quiniela-444s.onrender.com';
 //const API_URL = 'http://localhost:3000';
 
 

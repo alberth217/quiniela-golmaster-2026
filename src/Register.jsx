@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Mail, Lock, User, AlertCircle, ArrowRight, CheckCircle, ArrowLeft } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import API_URL from './config';
+
 function Register() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -62,7 +64,7 @@ function Register() {
 
     try {
       // ⚠️ Asegúrate de que esta URL sea la correcta de tu Render ⚠️
-      const backendUrl = 'https://api-quiniela-444s.onrender.com/registro';
+      const backendUrl = `${API_URL}/registro`;
 
       const response = await fetch(backendUrl, {
         method: 'POST',

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Trophy, Mail, Lock, AlertCircle, ArrowRight, CheckCircle, ArrowLeft, Eye, EyeOff } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import API_URL from './config';
+
 function Login() {
   const navigate = useNavigate();
 
@@ -20,7 +22,7 @@ function Login() {
     try {
       // 1. Petición al Backend
       // ⚠️ Asegúrate de que esta URL sea la correcta de tu Render ⚠️
-      const backendUrl = 'https://api-quiniela-444s.onrender.com/login';
+      const backendUrl = `${API_URL}/login`;
       const response = await fetch(backendUrl, {
         method: 'POST',
         headers: {

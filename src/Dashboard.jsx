@@ -7,7 +7,9 @@ import {
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import RulesSection from './RulesSection';
 
-const API_URL = 'https://api-quiniela-444s.onrender.com';
+import API_URL from './config';
+
+// const API_URL = 'https://api-quiniela-444s.onrender.com';
 
 function Dashboard() {
   const navigate = useNavigate();

@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Trophy, Medal, User, Home, BarChart2, Bell, LogOut } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const API_URL = 'https://api-quiniela-444s.onrender.com'; // Ajustado a producción
+import API_URL from './config';
+
+// const API_URL = 'https://api-quiniela-444s.onrender.com'; // Ajustado a producción
 
 function Ranking() {
     const navigate = useNavigate();
