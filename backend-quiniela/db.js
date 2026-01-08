@@ -12,4 +12,10 @@ const poolConfig = {
 
 const pool = new Pool(poolConfig);
 
+// Mantiene la aplicación viva en caso de errores de conexión inactiva
+pool.on('error', (err) => {
+  console.error('Error inesperado en el cliente inactivo de la base de datos', err);
+  process.exit(-1);
+});
+
 module.exports = pool;

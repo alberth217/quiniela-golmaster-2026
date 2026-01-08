@@ -316,4 +316,13 @@ app.get('/mis-puntos/:usuario_id', async (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
+
+    // Test de conexión a BD al iniciar
+    pool.query('SELECT NOW()')
+        .then(res => {
+            console.log('✅ Conexión a Base de Datos exitosa:', res.rows[0]);
+        })
+        .catch(err => {
+            console.error('❌ Error fatal conectando a la Base de Datos:', err);
+        });
 });
